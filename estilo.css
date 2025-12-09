@@ -1,0 +1,99 @@
+/*1.Estilos Basicos e Corpo*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;/*Cor de fundo mais clara*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;/* Alinha no topo para formularios maiores*/
+    padding: 40px 20px;
+    min-height: 100vh;
+    margin: 0;
+}
+/*2.Estilo do Container e titulo*/
+.container{
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0 , 0,0.1);
+    width: 100%;
+    max-width: 600px; /* Aumento a Largura para acomodar mais campos*/
+    text-align: center;
+}
+h1{
+    color: #007bff; /*titulo com cor Primaria*/
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+/*3.estilo Fieldset(divisor de seçoes)*/
+fieldset{
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+legend{
+    color: #495057;
+    font-weight: bold;
+    font-size: 1.1px;
+    padding: 0 10px;
+}
+/*4.Estilo dos Grupos de formulario*/
+.form-group{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #495057;
+}
+/*Estilo para todos os campos de texto,email,data,telefone e select*/
+input:not([type="checkbox"]),
+select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+input:not([type="checkbox"]):focus,
+select:focus{
+    border: #007bff;/*Borda azul ao Fazer*/
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+/*5.Estilo para Checlbox*/
+.checkbox-group{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.checkbox-group input[type="checkbox"]{
+    margin-right: 10px;
+    width: auto;/*Remove a largura de 100px*/
+}
+.checkbox-group label{
+    font-weight: normal;
+    margin: 0;
+    display: inline;
+}
+/*6.Estilo do Botao*/
+button[type="submit"]{
+    background-color: #007bff;/*Cor primaria azul*/
+    color: white;
+    padding: 15px,25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1ex;
+    width: 100%;
+    transition: bakground-color 0.3 ease;
+} 
+
+button[type="submit"]:hover {
+background-color: #0056b3;/*cor mais escura ao passar o mouse*/
+}
+
